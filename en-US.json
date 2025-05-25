@@ -1,0 +1,62 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "food tok tv recipes",
+      "intents": [
+        {
+          "name": "GetRecipeIntent",
+          "slots": [
+            {
+              "name": "RecipeName",
+              "type": "RECIPE_NAMES"
+            }
+          ],
+          "samples": [
+            "how do I make {RecipeName}",
+            "give me the recipe for {RecipeName}",
+            "what's the recipe for {RecipeName}",
+            "tell me how to cook {RecipeName}"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "name": "RECIPE_NAMES",
+          "values": [
+            {
+              "name": {
+                "value": "shrimp cakes"
+              }
+            },
+            {
+              "name": {
+                "value": "banana bread"
+              }
+            },
+            {
+              "name": {
+                "value": "stuffed mushrooms"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
